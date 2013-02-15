@@ -12,15 +12,6 @@ from java.awt.event import ActionEvent
 from java.awt.event import KeyEvent
 class BurpExtender(IBurpExtender, IContextMenuFactory, ActionListener):
 
-	'''
-	1) Identify successful login request 
-	2) Identify session cookie(s) from response
-	3) Send request
-		a) Session fixation? was that cookie set already in the request? check if its value changed
-		b) Session fixation? with the cookie set to an arbitrary value of the same length - does the cookie change after being set
-		c) Session rotation? if you hav
-	'''
-
 
 	def __init__(self):
 		self.menuItem = JMenuItem('sqldude')
